@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="backArrow">
+        <img (click)="home()"
+            src="https://static.vecteezy.com/system/resources/thumbnails/000/589/654/small/40_436.jpg" />
+    </div>
+    <h1>
+        Employee List
+    </h1>
+    <table *ngIf="empData">
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>DOB</th>
+            <th>Role</th>
+            <th>Phone Number</th>
+            <th>Gender</th>
+        </tr>
+        <tr>
+            <td>{{empData.name}}</td>
+            <td>{{empData.address}}</td>
+            <td>{{empData.dob}}</td>
+            <td>{{empData.role}}</td>
+            <td>{{empData.phone}}</td>
+            <td>{{empData.gender}}</td>
+        </tr>
+    </table>
+</div>
